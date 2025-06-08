@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Ard AlMubaraka | الأرض المباركة</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="en">Al Ard AlMubaraka</span>
+        <span class="ar">الأرض المباركة</span>
+      </div>
+      <ul class="nav-links">
+        <li data-section="home" class="active"> <span class="en">Home</span><span class="ar">الرئيسية</span> </li>
+        <li data-section="about"> <span class="en">About Us</span><span class="ar">من نحن</span> </li>
+        <li data-section="offers"> <span class="en">Offers</span><span class="ar">العروض</span> </li>
+        <li data-section="contact"> <span class="en">Contact Us</span><span class="ar">اتصل بنا</span> </li>
+      </ul>
+      <div class="lang-switcher">
+        <button id="lang-en" class="active">EN</button>
+        <button id="lang-ar">عربي</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="page-section active">
+      <!-- Video Background Hero -->
+      <div class="home-video-bg">
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80">
+          <source src="https://videos.pexels.com/video-files/857195.mp4" type="video/mp4" />
+        </video>
+        <div class="home-video-overlay"></div>
+      </div>
+      <div class="home-hero-glass animate-fadein">
+        <img src="assets/favicon.ico" alt="Al Ard AlMubaraka Logo" class="hero-logo" />
+        <h1 class="home-gradient-headline animate-gradient"><span class="en">Al Ard AlMubaraka</span><span class="ar">الأرض المباركة</span></h1>
+        <h2 class="home-hero-subtitle en">Luxury, Spirituality, and Adventure Await</h2>
+        <h2 class="home-hero-subtitle ar">الرفاهية والروحانية والمغامرة بانتظارك</h2>
+        <p class="home-hero-tagline en">From the sacred to the spectacular, discover journeys that change your life.</p>
+        <p class="home-hero-tagline ar">من الروحانية إلى الروعة، اكتشف رحلات تغير حياتك.</p>
+        <button class="cta-btn en">Explore Offers</button>
+        <button class="cta-btn ar">استكشف العروض</button>
+      </div>
+      <div class="scroll-down-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Surprising Diagonal Company Section -->
+      <div class="home-diagonal-section">
+        <div class="diagonal-bg"></div>
+        <div class="diagonal-content">
+          <div class="diagonal-images">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=500&q=80" class="diag-img img1" alt="Team on journey" />
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="diag-img img2" alt="Group travel" />
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="diag-img img3" alt="Smiling team" />
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="diag-img img4" alt="Desert adventure" />
+          </div>
+          <div class="diagonal-glass-card">
+            <div class="floating-icons">
+              <span class="float-icon globe"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M8 16a8 8 0 0 1 16 0 8 8 0 0 1-16 0zm8-8c2.2 2.5 3.5 5.5 3.5 8s-1.3 5.5-3.5 8c-2.2-2.5-3.5-5.5-3.5-8s1.3-5.5 3.5-8z" stroke="#1e3a5c" stroke-width="2"/></svg></span>
+              <span class="float-icon heart"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M16 24s-7-4.5-7-9a4 4 0 0 1 7-2.7A4 4 0 0 1 23 15c0 4.5-7 9-7 9z" stroke="#1e3a5c" stroke-width="2"/></svg></span>
+              <span class="float-icon star"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M16 8l2.5 6.5H25l-5.2 4.2L21 24l-5-3.5L11 24l1.2-5.3L7 14.5h6.5L16 8z" stroke="#1e3a5c" stroke-width="2"/></svg></span>
+              <span class="float-icon kaaba"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><rect x="10" y="14" width="12" height="8" rx="2" fill="#1e3a5c"/><rect x="12" y="16" width="8" height="4" rx="1" fill="#e0b973"/></svg></span>
+            </div>
+            <h2><span class="en">A Journey Like No Other</span><span class="ar">رحلة لا مثيل لها</span></h2>
+            <p class="en">At Al Ard AlMubaraka, we blend tradition, luxury, and adventure to create unforgettable experiences. Our story is one of passion, care, and a relentless pursuit of excellence. Every journey is crafted with heart, whether you seek spiritual fulfillment or breathtaking discovery.</p>
+            <p class="ar">في الأرض المباركة، نمزج بين الأصالة والرفاهية والمغامرة لصناعة تجارب لا تُنسى. قصتنا هي قصة شغف ورعاية وسعي دائم للتميز. كل رحلة نصنعها بقلبنا، سواء كنت تبحث عن الروحانية أو الاكتشاف المذهل.</p>
+            <h3 class="en">Our Mission</h3>
+            <h3 class="ar">مهمتنا</h3>
+            <p class="en">To inspire, guide, and serve with integrity and expertise. We believe every traveler deserves a magical story.</p>
+            <p class="ar">إلهام وإرشاد وخدمة عملائنا بأمانة واحترافية. نؤمن أن كل مسافر يستحق قصة ساحرة.</p>
+            <h3 class="en">Our Values</h3>
+            <h3 class="ar">قيمنا</h3>
+            <ul class="en">
+              <li>Trust & Transparency</li>
+              <li>Luxury & Comfort</li>
+              <li>Expert Guidance</li>
+              <li>Care & Support</li>
+            </ul>
+            <ul class="ar">
+              <li>الثقة والشفافية</li>
+              <li>الرفاهية والراحة</li>
+              <li>إرشاد احترافي</li>
+              <li>رعاية ودعم</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Timeline -->
+        <div class="diagonal-timeline-bg">
+          <div class="diagonal-timeline">
+            <div class="timeline-step">
+              <div class="timeline-icon"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><path d="M16 10v8l5 3" stroke="#e0b973" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="timeline-year">2010</div>
+              <div class="timeline-desc en">Founded in Riyadh</div>
+              <div class="timeline-desc ar">تأسست في الرياض</div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><path d="M10 16h12" stroke="#e0b973" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+              <div class="timeline-year">2014</div>
+              <div class="timeline-desc en">1,000+ pilgrims served</div>
+              <div class="timeline-desc ar">خدمة أكثر من ١٠٠٠ حاج</div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><path d="M16 10v12" stroke="#e0b973" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+              <div class="timeline-year">2018</div>
+              <div class="timeline-desc en">Tourism adventures launched</div>
+              <div class="timeline-desc ar">إطلاق رحلات السياحة</div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-icon"><svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#fff"/><path d="M12 20l4-8 4 8" stroke="#e0b973" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="timeline-year">2024</div>
+              <div class="timeline-desc en">10,000+ journeys completed</div>
+              <div class="timeline-desc ar">أكثر من ١٠,٠٠٠ رحلة ناجحة</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Parallax Destinations Gallery -->
+      <div class="destinations-parallax animate-fadein">
+        <h3 class="en">Featured Destinations</h3>
+        <h3 class="ar">وجهات مميزة</h3>
+        <div class="destinations-scroll">
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Petra, Jordan" />
+            <div class="dest-title en">Petra, Jordan</div>
+            <div class="dest-title ar">البتراء، الأردن</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80" alt="Istanbul, Turkey" />
+            <div class="dest-title en">Istanbul, Turkey</div>
+            <div class="dest-title ar">إسطنبول، تركيا</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80" alt="Mecca, Saudi Arabia" />
+            <div class="dest-title en">Mecca, Saudi Arabia</div>
+            <div class="dest-title ar">مكة المكرمة، السعودية</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80" alt="Atlas Mountains, Morocco" />
+            <div class="dest-title en">Atlas Mountains, Morocco</div>
+            <div class="dest-title ar">جبال الأطلس، المغرب</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Wadi Rum, Jordan" />
+            <div class="dest-title en">Wadi Rum, Jordan</div>
+            <div class="dest-title ar">وادي رم، الأردن</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Riyadh, Saudi Arabia" />
+            <div class="dest-title en">Riyadh, Saudi Arabia</div>
+            <div class="dest-title ar">الرياض، السعودية</div>
+          </div>
+          <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Desert Adventure" />
+            <div class="dest-title en">Desert Adventure</div>
+            <div class="dest-title ar">مغامرة الصحراء</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="page-section">
+      <div class="about-split">
+        <div class="about-img-col">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" alt="Our team on a journey" class="about-img-main" />
+        </div>
+        <div class="about-card">
+          <h2><span class="en">About Us</span><span class="ar">من نحن</span></h2>
+          <p class="en">Our mission is to inspire, guide, and serve travelers on their spiritual and worldly journeys. We offer exceptional Hajj, Umrah, and tourism experiences with trust, care, and excellence.</p>
+          <p class="ar">مهمتنا هي إلهام وإرشاد وخدمة المسافرين في رحلاتهم الروحية والدنيوية. نقدم تجارب حج وعمرة وسياحة استثنائية بثقة ورعاية وتميز.</p>
+          <h3 class="en">Our Vision</h3>
+          <h3 class="ar">رؤيتنا</h3>
+          <p class="en">To be the most trusted and inspiring travel partner in the region.</p>
+          <p class="ar">أن نكون الشريك الأكثر ثقة وإلهامًا في مجال السفر في المنطقة.</p>
+          <h3 class="en">Our Story</h3>
+          <h3 class="ar">قصتنا</h3>
+          <p class="en">Founded by passionate travelers, we have helped thousands of pilgrims and adventurers create memories that last a lifetime. Our team is dedicated to making every detail perfect, from your first inquiry to your safe return home.</p>
+          <p class="ar">تأسست شركتنا على يد عشاق السفر، وساعدنا آلاف الحجاج والمغامرين في صناعة ذكريات تدوم مدى الحياة. فريقنا ملتزم بجعل كل التفاصيل مثالية من أول استفسار حتى عودتك سالماً.</p>
+        </div>
+      </div>
+      <!-- Timeline -->
+      <div class="about-timeline">
+        <h3 class="en">Our Journey</h3>
+        <h3 class="ar">رحلتنا</h3>
+        <div class="timeline-track">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M16 10v8l5 3" stroke="#1e3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="timeline-year">2010</div>
+            <div class="timeline-desc en">Company founded in Riyadh</div>
+            <div class="timeline-desc ar">تأسست الشركة في الرياض</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M10 16h12" stroke="#1e3a5c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="timeline-year">2014</div>
+            <div class="timeline-desc en">First 1,000 pilgrims served</div>
+            <div class="timeline-desc ar">خدمة أول ١٠٠٠ حاج</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M16 10v12" stroke="#1e3a5c" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="timeline-year">2018</div>
+            <div class="timeline-desc en">Expanded to tourism adventures</div>
+            <div class="timeline-desc ar">التوسع في السياحة والمغامرات</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#e0b973"/><path d="M12 20l4-8 4 8" stroke="#1e3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="timeline-year">2024</div>
+            <div class="timeline-desc en">Over 10,000 journeys completed</div>
+            <div class="timeline-desc ar">أكثر من ١٠,٠٠٠ رحلة ناجحة</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team -->
+      <div class="about-team">
+        <h3 class="en">Meet Our Team</h3>
+        <h3 class="ar">تعرف على فريقنا</h3>
+        <div class="team-cards">
+          <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed - CEO" class="team-img" />
+            <h4 class="en">Ahmed Al-Farsi</h4>
+            <h4 class="ar">أحمد الفارسي</h4>
+            <p class="en">CEO & Founder. 15+ years in travel, passionate about service and excellence.</p>
+            <p class="ar">الرئيس التنفيذي والمؤسس. أكثر من ١٥ سنة في مجال السفر، شغوف بالخدمة والتميز.</p>
+          </div>
+          <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara - Operations" class="team-img" />
+            <h4 class="en">Sara Al-Mutairi</h4>
+            <h4 class="ar">سارة المطيري</h4>
+            <p class="en">Head of Operations. Ensures every journey is smooth and memorable.</p>
+            <p class="ar">رئيسة العمليات. تضمن أن تكون كل رحلة سلسة ولا تُنسى.</p>
+          </div>
+          <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ali - Guide" class="team-img" />
+            <h4 class="en">Ali Al-Qahtani</h4>
+            <h4 class="ar">علي القحطاني</h4>
+            <p class="en">Lead Guide. Expert in Hajj, Umrah, and Middle East destinations.</p>
+            <p class="ar">المرشد الرئيسي. خبير في الحج والعمرة ووجهات الشرق الأوسط.</p>
+          </div>
+          <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Fatima - Customer Care" class="team-img" />
+            <h4 class="en">Fatima Al-Zahrani</h4>
+            <h4 class="ar">فاطمة الزهراني</h4>
+            <p class="en">Customer Care. Always ready to help and support our travelers.</p>
+            <p class="ar">خدمة العملاء. دائماً جاهزة لمساعدة ودعم المسافرين.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offers" class="page-section">
+      <div class="offers-header">
+        <h2><span class="en">Our Offers</span><span class="ar">عروضنا</span></h2>
+        <div class="offers-tabs">
+          <button class="offers-tab active" data-tab="hajj-umrah"><span class="en">Hajj & Umrah</span><span class="ar">الحج والعمرة</span></button>
+          <button class="offers-tab" data-tab="tourism"><span class="en">Tourism</span><span class="ar">السياحة</span></button>
+        </div>
+      </div>
+      <div class="offers-main-layout">
+        <div class="offers-sidebar">
+          <div id="offers-d3"></div>
+          <div class="offers-sidebar-text">
+            <h4 class="en">Seasonal Trends</h4>
+            <h4 class="ar">مواسم السفر</h4>
+            <p class="en">See when most travelers book their journeys and discover the best times for your trip.</p>
+            <p class="ar">تعرف على أفضل أوقات السفر وأكثر المواسم ازدحاماً.</p>
+          </div>
+        </div>
+        <div class="offers-content">
+          <div class="offers-grid hajj-umrah-grid">
+            <div class="offer-card">
+              <span class="offer-badge best-seller en">Best Seller</span>
+              <span class="offer-badge best-seller ar">الأكثر طلباً</span>
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Hajj group at Kaaba" class="offer-img" />
+              <h4 class="en">Hajj 2024 Premium Package</h4>
+              <h4 class="ar">باقة الحج المميزة 2024</h4>
+              <p class="en">Luxury accommodation, guided rituals, VIP transport. <b>Includes:</b> 5-star hotels, expert guides, group activities, and more.</p>
+              <p class="ar">إقامة فاخرة، مناسك بإشراف مرشدين، نقل VIP. <b>يشمل:</b> فنادق 5 نجوم، مرشدون خبراء، أنشطة جماعية والمزيد.</p>
+            </div>
+            <div class="offer-card">
+              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Umrah family group" class="offer-img" />
+              <h4 class="en">Umrah Family Special</h4>
+              <h4 class="ar">عرض العمرة للعائلات</h4>
+              <p class="en">Family-friendly, group discounts, spiritual guidance. <b>Perfect for:</b> Families, groups, and first-time pilgrims.</p>
+              <p class="ar">مناسب للعائلات، خصومات جماعية، إرشاد روحي. <b>مثالي لـ:</b> العائلات، المجموعات، والحجاج لأول مرة.</p>
+            </div>
+            <div class="offer-card">
+              <span class="offer-badge vip en">VIP</span>
+              <span class="offer-badge vip ar">كبار الشخصيات</span>
+              <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80" alt="Spiritual gathering" class="offer-img" />
+              <h4 class="en">VIP Umrah Experience</h4>
+              <h4 class="ar">تجربة عمرة VIP</h4>
+              <p class="en">Private tours, luxury transport, and exclusive access. <b>For those who want the best.</b></p>
+              <p class="ar">جولات خاصة، نقل فاخر، وصول حصري.<b>لمن يبحث عن الأفضل.</b></p>
+            </div>
+          </div>
+          <div class="offers-grid tourism-grid" style="display:none;">
+            <div class="offer-card">
+              <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Petra, Jordan" class="offer-img" />
+              <h4 class="en">Magical Jordan Tour</h4>
+              <h4 class="ar">جولة الأردن الساحرة</h4>
+              <p class="en">Petra, Dead Sea, Wadi Rum adventures. <b>Highlights:</b> Guided tours, local cuisine, and desert camping.</p>
+              <p class="ar">البتراء، البحر الميت، مغامرات وادي رم. <b>مميزات:</b> جولات بإشراف مرشدين، مأكولات محلية، تخييم في الصحراء.</p>
+            </div>
+            <div class="offer-card">
+              <span class="offer-badge best-seller en">Best Seller</span>
+              <span class="offer-badge best-seller ar">الأكثر طلباً</span>
+              <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80" alt="Istanbul, Turkey" class="offer-img" />
+              <h4 class="en">Discover Turkey</h4>
+              <h4 class="ar">اكتشف تركيا</h4>
+              <p class="en">Istanbul, Cappadocia, Bosphorus cruise. <b>Includes:</b> City tours, hot air balloon rides, and more.</p>
+              <p class="ar">إسطنبول، كابادوكيا، رحلة البوسفور. <b>يشمل:</b> جولات في المدن، رحلات منطاد، والمزيد.</p>
+            </div>
+            <div class="offer-card">
+              <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80" alt="Adventure in mountains" class="offer-img" />
+              <h4 class="en">Adventure Morocco</h4>
+              <h4 class="ar">مغامرة المغرب</h4>
+              <p class="en">Explore Marrakech, ride camels in the Sahara, and visit ancient cities. <b>Perfect for:</b> Adventure seekers and culture lovers.</p>
+              <p class="ar">استكشف مراكش، اركب الجمال في الصحراء، وزر المدن العريقة.<b>مثالي لـ:</b> عشاق المغامرة والثقافة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="page-section">
+      <div class="contact-glass-bg">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Contact background" class="contact-blur-bg" />
+      </div>
+      <div class="contact-glass-card">
+        <h2 class="en">Contact Us</h2>
+        <h2 class="ar">اتصل بنا</h2>
+        <div class="contact-floating-icons">
+          <a href="#" class="contact-float-icon" title="WhatsApp"><img src="assets/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="#" class="contact-float-icon" title="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a>
+          <a href="#" class="contact-float-icon" title="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a>
+        </div>
+        <div class="contact-stepper">
+          <div class="step">
+            <div class="step-icon"><svg width="28" height="28" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#e0b973"/><path d="M8 14h12" stroke="#1e3a5c" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="step-text">
+              <span class="en">Call us: +966 123 456 789</span>
+              <span class="ar">اتصل بنا: +٩٦٦ ١٢٣ ٤٥٦ ٧٨٩</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-icon"><svg width="28" height="28" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#e0b973"/><path d="M7 10l7 5 7-5" stroke="#1e3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="step-text">
+              <span class="en">Email: info@alardalmubaraka.com</span>
+              <span class="ar">البريد: info@alardalmubaraka.com</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-icon"><svg width="28" height="28" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#e0b973"/><path d="M14 8a4 4 0 0 1 4 4c0 2.2-2.7 5.5-3.5 6.5-.2.2-.5.2-.7 0C10.7 17.5 8 14.2 8 12a4 4 0 0 1 4-4z" stroke="#1e3a5c" stroke-width="2"/></svg></div>
+            <div class="step-text">
+              <span class="en">123 King Fahd Road, Riyadh</span>
+              <span class="ar">١٢٣ طريق الملك فهد، الرياض</span>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-glass-form">
+          <input type="text" name="name" placeholder="Name / الاسم" required>
+          <input type="email" name="email" placeholder="Email / البريد الإلكتروني" required>
+          <textarea name="message" placeholder="Message / الرسالة" required></textarea>
+          <button type="submit" class="en">Send</button>
+          <button type="submit" class="ar">إرسال</button>
+        </form>
+        <div class="contact-map-circle">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.123456789!2d46.675295!3d24.713552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038c1234567%3A0x123456789abcdef!2sRiyadh!5e0!3m2!1sen!2ssa!4v1710000000000!5m2!1sen!2ssa" width="100%" height="100%" style="border:0; border-radius:50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="page-section">
+      <h2><span class="en">Testimonials</span><span class="ar">آراء العملاء</span></h2>
+      <div class="testimonials-list">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah A." class="testimonial-img" />
+          <p class="en">A truly magical experience! Highly recommended. The team made everything easy and memorable.</p>
+          <p class="ar">تجربة ساحرة حقًا! أنصح بها بشدة. الفريق جعل كل شيء سهلاً ولا يُنسى.</p>
+          <span>- <span class="en">Sarah A.</span><span class="ar">سارة أ.</span></span>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mohammed K." class="testimonial-img" />
+          <p class="en">Professional, caring, and inspiring team. My family felt safe and happy throughout our Umrah trip.</p>
+          <p class="ar">فريق محترف وملهم ويهتم بالتفاصيل. عائلتي شعرت بالأمان والسعادة طوال رحلة العمرة.</p>
+          <span>- <span class="en">Mohammed K.</span><span class="ar">محمد ك.</span></span>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ali S." class="testimonial-img" />
+          <p class="en">The best travel company I have ever dealt with. Every detail was perfect, and the guides were amazing.</p>
+          <p class="ar">أفضل شركة سفر تعاملت معها. كل التفاصيل كانت مثالية والمرشدون رائعون.</p>
+          <span>- <span class="en">Ali S.</span><span class="ar">علي س.</span></span>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Fatima Z." class="testimonial-img" />
+          <p class="en">I loved the Jordan tour! The desert camping and local food were unforgettable. Thank you!</p>
+          <p class="ar">أحببت جولة الأردن! التخييم في الصحراء والطعام المحلي كانا لا يُنسى. شكراً لكم!</p>
+          <span>- <span class="en">Fatima Z.</span><span class="ar">فاطمة ز.</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="en">Al Ard AlMubaraka</span>
+        <span class="ar">الأرض المباركة</span>
+      </div>
+      <div class="footer-links">
+        <a href="#home" class="en">Home</a><a href="#home" class="ar">الرئيسية</a>
+        <a href="#about" class="en">About Us</a><a href="#about" class="ar">من نحن</a>
+        <a href="#offers" class="en">Offers</a><a href="#offers" class="ar">العروض</a>
+        <a href="#contact" class="en">Contact</a><a href="#contact" class="ar">اتصل بنا</a>
+      </div>
+      <div class="footer-contact">
+        <span class="en">Email: info@alardalmubaraka.com | Phone: +966 123 456 789</span>
+        <span class="ar">البريد الإلكتروني: info@alardalmubaraka.com | الهاتف: +966 123 456 789</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="en">&copy; 2024 Al Ard AlMubaraka. All rights reserved.</span>
+      <span class="ar">&copy; 2024 الأرض المباركة. جميع الحقوق محفوظة.</span>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html> 
